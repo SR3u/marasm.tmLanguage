@@ -10,7 +10,7 @@ patterns:
   name: constant.numeric.dec
 - match: \b(nop|mov|add|sub|mul|div|floor|ceil|push|pop|call|ret|jmp|jz|jnz|jmz|jlz|in|out|setint|int|rmint|sleep|halt)\b
   name: keyword.marasm.instruction
-- match: \b(trace|log)\b
+- match: \b(trace|log|print)\b
   name: constant.numeric.line-number.find-in-files
 - match: \b(var|gvar|delv|delg)\b
   name: variable.parameter

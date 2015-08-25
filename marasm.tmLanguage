@@ -24,7 +24,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(trace|log)\b</string>
+			<string>\b(trace|log|print)\b</string>
 			<key>name</key>
 			<string>constant.numeric.line-number.find-in-files</string>
 		</dict>
