@@ -1,0 +1,30 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: marASM
+scopeName: source.marasm
+fileTypes: ["marasm"]
+uuid: e67d99a0-6c87-49b3-a8a2-d0404f93cbe0
+
+patterns:
+- match: \b([0-9,\.]+)\b
+  name: constant.numeric.dec
+- match: \b(nop|mov|add|sub|mul|div|floor|ceil|push|pop|call|ret|jmp|jz|jnz|jmz|jlz|in|out|setint|int|rmint|sleep|halt)\b
+  name: keyword.marasm.instruction
+- match: \b(trace|log)\b
+  name: constant.numeric.line-number.find-in-files
+- match: \b(var|gvar|delv|delg)\b
+  name: variable.parameter
+- match: (\;.*$)
+  name: comment.line 
+- name: string.character
+  begin: \'
+  end: \'
+- name: string.header.json
+  begin: \#json
+  end: \#end
+- name: entity.name.function
+  match: (\$[^\s]+)
+- name: storage.type.tag
+  match: (\@[^\s]+)  
+  
+...
