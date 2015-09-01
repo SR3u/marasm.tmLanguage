@@ -18,7 +18,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(nop|mov|add|sub|mul|div|floor|ceil|push|pop|call|ret|jmp|jz|jnz|jmz|jlz|in|out|setint|int|rmint|sleep|halt)\b</string>
+			<string>\b(nop|mov|add|sub|mul|div|floor|ceil|push|pop|call|ret|jmp|jz|jnz|jmz|jlz|in|out|setint|int|rmint|sleep|halt|load|store)\b</string>
 			<key>name</key>
 			<string>keyword.marasm.instruction</string>
 		</dict>

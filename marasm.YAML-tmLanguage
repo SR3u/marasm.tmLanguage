@@ -8,7 +8,7 @@ uuid: e67d99a0-6c87-49b3-a8a2-d0404f93cbe0
 patterns:
 - match: \b([0-9,\.]+)\b
   name: constant.numeric.dec
-- match: \b(nop|mov|add|sub|mul|div|floor|ceil|push|pop|call|ret|jmp|jz|jnz|jmz|jlz|in|out|setint|int|rmint|sleep|halt)\b
+- match: \b(nop|mov|add|sub|mul|div|floor|ceil|push|pop|call|ret|jmp|jz|jnz|jmz|jlz|in|out|setint|int|rmint|sleep|halt|load|store)\b
   name: keyword.marasm.instruction
 - match: \b(trace|log|print)\b
   name: constant.numeric.line-number.find-in-files
